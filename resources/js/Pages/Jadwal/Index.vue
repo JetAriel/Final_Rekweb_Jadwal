@@ -193,7 +193,6 @@ const createJadwal = () => {
 };
 
 const updateJadwal = (id) => {
-    console.log(formData.deadline);
     formData.id = id;
 
     console.log(`Update item with id ${id}`);
