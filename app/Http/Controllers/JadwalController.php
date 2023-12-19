@@ -36,14 +36,12 @@ class JadwalController extends Controller
 
         $jadwal->update($validatedData);
 
-        // return redirect()->back()->with('success', 'Task updated successfully.');
         return redirect()->route('jadwal.index');
     }
 
     public function destroy(Jadwal $jadwal) {
         $jadwal->delete();
 
-        // return redirect()->back()->with('success', 'Task deleted successfully.');
         return redirect()->route('jadwal.index');
     }
 }
